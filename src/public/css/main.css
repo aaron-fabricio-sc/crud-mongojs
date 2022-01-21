@@ -1,0 +1,13 @@
+body {
+  background-color: darkcyan;
+}
+h1,h2,h3{
+  color: black;
+  text-align: center;
+}
+
+hr{
+  color: black;
+  background: gray;
+}
+

@@ -1,0 +1,7 @@
+# NOTES APP
+
+## Environment variables
+
+- PORT
+- NOTES_APP_MONGODB_HOST
+- NOTES_APP_MONGODB_DATABASE

@@ -1,0 +1,54 @@
+<div class="col">
+
+  <div class="col-md-4 mx-auto">
+    <div class="card">
+      <div class="card-header text-center">
+        Registrar Cuenta
+      </div>
+      <div class="card-body">
+        <form action="/users/singup" method="post">
+          <div class="form-group">
+            <input
+              type="text"
+              placeholder="Name..."
+              name="name"
+              class="form-control"
+              value="{{name}}"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="email"
+              placeholder="email..."
+              name="email"
+              class="form-control"
+              value="{{email}}"
+            />
+
+          </div>
+          <div class="form-group">
+            <input
+              type="password"
+              placeholder="password..."
+              name="password"
+              class="form-control"
+            />
+
+          </div>
+          <div class="form-group">
+            <input
+              type="password"
+              placeholder="Confirm password..."
+              name="confirm_password"
+              class="form-control"
+            />
+
+          </div>
+            <div class="form-group">  
+                 <button type="submit" class="btn btn-primary btn-block"> Register </button>
+            </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
