@@ -46,7 +46,7 @@ usersCtrl.singIn = passport.authenticate("local", {
 
 usersCtrl.logOut = (req, res) => {
   req.logOut();
-  req.flash("success_msg", "Salida con éxito");
+  req.flash("success_msg", "successful exit");
   res.redirect("/users/singin");
 };
 

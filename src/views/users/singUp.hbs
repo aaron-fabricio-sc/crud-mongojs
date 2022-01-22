@@ -1,9 +1,9 @@
 <div class="col">
 
-  <div class="col-md-4 mx-auto">
-    <div class="card">
-      <div class="card-header text-center">
-        Registrar Cuenta
+  <div class="col-md-4  mx-auto rounded">
+    <div class="card fondo_form rounded">
+      <div class="card-header  text-center">
+        Register Account
       </div>
       <div class="card-body">
         <form action="/users/singup" method="post">
@@ -12,8 +12,9 @@
               type="text"
               placeholder="Name..."
               name="name"
-              class="form-control"
+              class="form-control rounded"
               value="{{name}}"
+              
             />
           </div>
           <div class="form-group">
@@ -21,7 +22,7 @@
               type="email"
               placeholder="email..."
               name="email"
-              class="form-control"
+              class="form-control rounded"
               value="{{email}}"
             />
 
@@ -30,8 +31,8 @@
             <input
               type="password"
               placeholder="password..."
-              name="password"
-              class="form-control"
+              name="password" 
+              class="form-control rounded"
             />
 
           </div>
@@ -40,12 +41,12 @@
               type="password"
               placeholder="Confirm password..."
               name="confirm_password"
-              class="form-control"
+              class="form-control rounded"
             />
 
           </div>
             <div class="form-group">  
-                 <button type="submit" class="btn btn-primary btn-block"> Register </button>
+                 <button type="submit" class="btn btn-primary btn-block rounded"> Register </button>
             </div>
         </form>
       </div>

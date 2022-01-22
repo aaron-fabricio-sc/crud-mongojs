@@ -1,13 +1,23 @@
 body {
-  background-color: darkcyan;
+  background-image: url("../img/rhino/rhino.gif");
+  background-repeat: repeat;
 }
-h1,h2,h3{
+h1,
+h2,
+h3 {
   color: black;
   text-align: center;
 }
 
-hr{
+hr {
   color: black;
   background: gray;
+}
+.fondo_form{
+  background: #eff0ed;
+}
+.fondo_nav{
+  background: #dddfd7;
+  color: #000;
 }
 
