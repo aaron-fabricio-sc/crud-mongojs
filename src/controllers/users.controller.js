@@ -8,10 +8,10 @@ usersCtrl.singup = async (req, res) => {
   const errors = [];
   const { name, email, password, confirm_password } = req.body;
   if (password != confirm_password) {
-    errors.push({ text: "Las contraseñas no coinciden" });
+    errors.push({ text: "Passwords do not match" });
   }
   if (password.length < 4) {
-    errors.push({ text: "La contraseña debe tener de 4 caracteres" });
+    errors.push({ text: "The password must have 4 characters" });
   }
   if (errors.length > 0) {
     res.render("users/singUp", { errors, name, email });
@@ -19,7 +19,7 @@ usersCtrl.singup = async (req, res) => {
     const emailUser = await User.findOne({ email: email });
 
     if (emailUser) {
-      req.flash("error_msg", "El email ya existe");
+      req.flash("error_msg", "The email already exists");
       res.redirect("/users/singup");
     } else {
       const newUser = new User({
@@ -29,7 +29,7 @@ usersCtrl.singup = async (req, res) => {
       });
       newUser.password = await newUser.encryptPassword(password);
       await newUser.save();
-      req.flash("success_msg", "Creado exitosamente");
+      req.flash("success_msg", "successfully created");
       res.redirect("/users/singin");
     }
   }
