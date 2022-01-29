@@ -37,8 +37,10 @@
         </ul>
         <ul class="navbar-nav ml-auto">
           
-        
-            <li class="nav-item">
+        {{#if user}}
+     
+          {{else}}
+       <li class="nav-item">
               <a href="/users/singin" class="nav-link">Login</a>
 
             </li>
@@ -46,7 +48,7 @@
               <a href="/users/singup" class="nav-link">Register</a>
 
             </li>
-          
+          {{/if}}
         </ul>
       </div>
     </div>
